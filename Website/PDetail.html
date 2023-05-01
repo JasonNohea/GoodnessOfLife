@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="PDetail.css">
+  <link rel="icon" href="assets/Logo.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div>
+      <a href="#"><img class="logo" src="assets/Logo.png"></a>
+      <a class="name " href="#">Goodness of Life</a>
+    </div>
+    <div>
+      <a class="navtext" href="index.html">Home</a>
+      <a class="navtext" href="#">Product</a>
+      <a class="navtext" href="#">About</a>
+      <a href="https://www.youtube.com/"><button class="cartt"><i class="fa-solid fa-cart-shopping"></i></button></a>
+      <button class="button">Login</button>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="Detail container">
+      <table>
+        <tr>
+          <td class="td-width">
+            <img class="big" id="big-image" src="assets/1.jpg">
+            <div id="small-images">
+              <img class="small" src="assets/1.jpg" onclick="changeImage('assets/1.jpg')">
+              <img class="small" src="assets/2.jpg" onclick="changeImage('assets/2.jpg')">
+              <img class="small" src="assets/3.jpg" onclick="changeImage('assets/3.jpg')">
+            </div>
+          </td class="td-width">
+          <td class="td-width">
+            <h2 class="title">Chicken Katsu</h2>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="rate-text">4.8</span><span class="rate-text">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span
+                class="rate-text">7 Sold</span>
+            </div>
+            <h2 class="price">Rp48.000</h2>
+            <span class="text-grey">Pengiriman dari: </span><span>KOTA BANDUNG</span>
+            <span class="text-grey">Protection: </span><span>Proteksi Makanan</span>
+            <p><b>Description</b></p>
+            <p class="desc text-grey">PENTING, Mohon membaca deskripsi terlebih dahulu sebelum memesan
+              Semua produk Mayasi Bento 100% Halal dan bersertifikat BPOM.
+              Berat Bersih 500 gram
+
+              Pengiriman hanya bisa menggunakan GRAB/GOJEK Instant / Sameday ( jika ada yang memilih jasa
+              kirim yang lain,mohon maaf akan kami cancel)
+
+              PreOrder 1 hari,namun jika produk ready, langsung kami kirim saat pemesanan.
+
+              Terimakasih.</p>
+          </td class="td-width">
+        </tr>
+      </table>
+    </div>
+    <div class="Control container">
+      <h2>Message</h2>
+      <textarea class="text-area">Contohnya: dalam paketnya dikasih es batu
+            </textarea>
+      <h2>Quantity</h2>
+      <table>
+        <td class="td-width">
+          <div class="counter">
+            <button class="counter-btn minus">-</button>
+            <input type="number" class="counter-input" value="0" min="0">
+            <button class="counter-btn plus">+</button>
+          </div>
+        </td class="td-width">
+        <td class="td-width">
+          <p id="stock">Tersisa: <span id="amount">283</span> pcs</p>
+        </td class="td-width">
+      </table>
+      <p class="text-grey" style="font-size: 12px; margin-top: 0px;">Min. Pembelian 1 pcs</p>
+      <span class="text-grey">Subtotal: </span>
+      <span class="price">Rp 48.000<span>
+          <button class="control-button add-to-cart">Add to Cart </button>
+          <button class="control-button buy-now">Buy Now</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="cont">
+        <table class="foot">
+            <tr>
+                <td><img class="fimg" src="assets/foot.png"></td>
+            </tr>
+            <tr>
+                <td class="ftext">
+                    <b>Goodness of Life</b> is a website-based e-commerce platform that offers a wide selection
+                    of
+                    <br>
+                    food and drinks, allowing users to engage in buying and selling transactions.
+                    <hr style="width:95%;margin-left:0 ">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="copyright">Copyright &copy; 2023 Goodness of Life.</p>
+                </td>
+                <td>
+                    <i class="fa fa-facebook"></i>
+                </td>
+                <td>
+                    <i class="fa fa-whatsapp" style="font-size:20px"></i>
+                </td>
+                <td>
+                    <i class="fa fa-envelope"></i>
+                </td>
+                <td>
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 512 512">
+                        <title>ionicons-v5_logos</title>
+                        <path
+                            d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
+                            fill="white"></path>
+                        <path d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z" fill="white">
+                        </path>
+                        <path
+                            d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
+                            fill="white"></path>
+                    </svg>
+                </td>
+            </tr>
+        </table>
+    </div>
+</footer>
+
+  <script>
+    function changeImage(imageSrc) {
+      var bigImage = document.getElementById('big-image');
+      bigImage.src = imageSrc;
+    }
+  </script>
+  <script>
+    const minusBtn = document.querySelector('.minus');
+    const plusBtn = document.querySelector('.plus');
+    const counterInput = document.querySelector('.counter-input');
+
+    minusBtn.addEventListener('click', () => {
+      if (counterInput.value > 0) {
+        counterInput.value--;
+      }
+    });
+
+    plusBtn.addEventListener('click', () => {
+      counterInput.value++;
+    });
+
+  </script>
+</body>
+
+</html>

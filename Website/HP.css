@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #BCE5C0;
+}
+
+.full{
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 2vw;
+  margin-top: 0;
+}
+
+.size{
+  font-size: 1.4vw;
+}
+
+.frozen {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.traditional {
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: right;
+}
+
+.product-box {
+  width: 158px;
+  height: 254px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 40%;
+  margin: 5px;
+  background-image: url('assets/Logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #018F47;
+  margin-bottom: 5px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  margin-top: 20px;
+  font-size: 20px;
+  color: gold;
+}
+
+.rate {
+  padding-top: 5px;
+  color: gray;
+  font-size: 12px;
+}
+
+.product-buy-button {
+  display: block;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.product-buy-button:hover {
+  background-color: #3e8e41;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  border-radius: 13px;
+  width: 40%;
+}
+
+.t {
+  margin-left: 200px;
+}
